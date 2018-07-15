@@ -53,6 +53,18 @@
             <version>1.2.47</version>
         </dependency>
 
+        <!--Serialize-->
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.12.Final</version>
+        </dependency>
+
     </dependencies>
 
     <build>
