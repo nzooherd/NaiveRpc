@@ -12,15 +12,12 @@ public class ServiceRegister {
     private ZookeeperManager zookeeperManager;
     private ProviderHost providerHost;
 
-    private Class interfaceClass;
     private String providerPath;
     private String host;
-    private int port;
 
-    public ServiceRegister(ZookeeperManager zookeeperManager, Class interfaceClass, int port){
+    public ServiceRegister(ZookeeperManager zookeeperManager, Class interfaceClass,
+                           int port, int weight){
         this.zookeeperManager = zookeeperManager;
-        this.interfaceClass = interfaceClass;
-        this.port = port;
 
         host = NetUtil.getHost();
         if(host == null){
@@ -28,7 +25,7 @@ public class ServiceRegister {
         }
 
         providerPath = interfaceClass.getName() + "/providers/" + host + ":" + port;
-        providerHost = new ProviderHost(host, port, 1);
+        providerHost = new ProviderHost(host, port, weight);
 
     }
 

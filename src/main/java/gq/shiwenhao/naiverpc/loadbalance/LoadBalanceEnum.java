@@ -1,17 +1,17 @@
 package gq.shiwenhao.naiverpc.loadbalance;
 
-public enum LoadBalanceStrategyEnum {
+public enum LoadBalanceEnum {
     Random, WeightRandom, Polling, WeightPolling;
 
-    public static LoadBalanceStrategyEnum queryByCode(String clusterStrategy){
+    public static LoadBalanceEnum queryByCode(String clusterStrategy){
         if("Random".equals(clusterStrategy)){
-            return LoadBalanceStrategyEnum.Random;
+            return LoadBalanceEnum.Random;
         } else if("WeightRandom".equals(clusterStrategy)){
-            return LoadBalanceStrategyEnum.WeightRandom;
+            return LoadBalanceEnum.WeightRandom;
         } else if("Pooling".equals(clusterStrategy)){
-            return LoadBalanceStrategyEnum.Polling;
+            return LoadBalanceEnum.Polling;
         } else if("WeightPooling".equals(clusterStrategy)){
-            return LoadBalanceStrategyEnum.WeightPolling;
+            return LoadBalanceEnum.WeightPolling;
         }
         return null;
     }

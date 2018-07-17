@@ -1,23 +1,39 @@
 package gq.shiwenhao.naiverpc.endpoint;
 
 import gq.shiwenhao.naiverpc.entities.ProviderHost;
-import gq.shiwenhao.naiverpc.entities.RpcFuture;
+import gq.shiwenhao.naiverpc.transport.RpcFuture;
 import gq.shiwenhao.naiverpc.entities.RpcRequest;
 import gq.shiwenhao.naiverpc.servicegovern.ServiceDiscover;
 import gq.shiwenhao.naiverpc.transport.ConnectManager;
 import gq.shiwenhao.naiverpc.transport.RpcRequestHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-public class ProxyFactory<T> implements InvocationHandler {
-    private Class<T> interfaceClass;
+public class ProxyFactory implements InvocationHandler {
+    private Logger logger = LoggerFactory.getLogger("ProxyFactory.class");
+
+    private Class interfaceClass;
     private ServiceDiscover serviceDiscover;
 
+    private boolean retryRequest;
+    private int retryTimes = 1;
+    private int timeout = 2000;
 
-    public ProxyFactory(Class<T> interfaceClass, ServiceDiscover serviceDiscover){
+    public ProxyFactory(Class<?> interfaceClass, ServiceDiscover serviceDiscover){
         this.interfaceClass = interfaceClass;
         this.serviceDiscover = serviceDiscover;
+    }
+
+    public void setTimeControl(boolean retryRequest, int retryTimes, int timeout){
+        this.retryRequest =retryRequest;
+        if(retryRequest && retryTimes <= 0 ){
+            logger.error("RetryTimes be positive number");
+        }
+        this.retryTimes = retryTimes;
+        this.timeout = timeout;
     }
 
     @Override
@@ -36,13 +52,34 @@ public class ProxyFactory<T> implements InvocationHandler {
                 throw new IllegalStateException(String.valueOf(method));
             }
         }
+
+        int attemptCounts = 0;
+        Object result = null;
         RpcRequest rpcRequest = createRpcRequest(method.getDeclaringClass().getName(),
                     method.getName(), args);
+
+        while(result == null && attemptCounts++ < retryTimes) {
+            ProviderHost providerHost = serviceDiscover.serviceLoadBalance();
+            RpcRequestHandler clientHandler = ConnectManager.getInstance().
+                    getChannelByProviderHost(providerHost);
+            RpcFuture rpcFuture = clientHandler.sendRequest(rpcRequest);
+            if(retryRequest) rpcFuture.timeControl(timeout);
+            result = rpcFuture.get();
+        }
+
+        if(result == null) {
+            logger.error("RequestId: ");
+        }
+        return result;
+    }
+
+    public Object call(String methodName, Object[] args){
+        RpcRequest rpcRequest = createRpcRequest(interfaceClass.getName(), methodName, args);
         ProviderHost providerHost = serviceDiscover.serviceLoadBalance();
         RpcRequestHandler clientHandler = ConnectManager.getInstance().
                 getChannelByProviderHost(providerHost);
-
-        return null;
+        RpcFuture rpcFuture = clientHandler.sendRequest(rpcRequest);
+        return rpcFuture;
     }
 
     private RpcRequest createRpcRequest(String className, String methodName, Object[] args){
@@ -83,7 +120,6 @@ public class ProxyFactory<T> implements InvocationHandler {
             case "java.lang.Byte":
                 return Byte.TYPE;
         }
-
         return classType;
     }
 }

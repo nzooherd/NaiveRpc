@@ -1,6 +1,5 @@
 package gq.shiwenhao.naiverpc.loadbalance;
 
-import gq.shiwenhao.naiverpc.entities.ProviderHost;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,26 +8,26 @@ import java.util.Map;
 
 public class LoadBalanceEngine {
     private static Logger logger = LoggerFactory.getLogger(LoadBalanceEngine.class);
-    private static final Map<LoadBalanceStrategyEnum, LoadBalanceStrategy>
+    private static final Map<LoadBalanceEnum, LoadBalanceStrategy>
             loadBalanceMap = new HashMap<>();
 
     static{
-       loadBalanceMap.put(LoadBalanceStrategyEnum.Random,
+       loadBalanceMap.put(LoadBalanceEnum.Random,
                new RandomStrategy());
-       loadBalanceMap.put(LoadBalanceStrategyEnum.Polling,
+       loadBalanceMap.put(LoadBalanceEnum.Polling,
                new PollingStategy());
-       loadBalanceMap.put(LoadBalanceStrategyEnum.WeightPolling,
+       loadBalanceMap.put(LoadBalanceEnum.WeightPolling,
                new WeightPollingStrategy());
-       loadBalanceMap.put(LoadBalanceStrategyEnum.WeightRandom,
+       loadBalanceMap.put(LoadBalanceEnum.WeightRandom,
                new WeightRandomStrategy());
     }
 
     public static LoadBalanceStrategy queryLoadBalance(String clusterStrategy){
-        LoadBalanceStrategyEnum loadBalanceStrategyEnum =
-                LoadBalanceStrategyEnum.queryByCode(clusterStrategy);
+        LoadBalanceEnum loadBalanceStrategyEnum =
+                LoadBalanceEnum.queryByCode(clusterStrategy);
         if(loadBalanceStrategyEnum == null) {
             logger.info("The load balance strategy is RANDOM");
-            return loadBalanceMap.get(LoadBalanceStrategyEnum.Random);
+            return loadBalanceMap.get(LoadBalanceEnum.Random);
         }
 
         LoadBalanceStrategy loadBalanceStrategy = loadBalanceMap.get(loadBalanceStrategyEnum);

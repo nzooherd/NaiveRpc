@@ -25,6 +25,7 @@ public class ZookeeperManager {
         this.zookeeperHost = zookeeperHost;
 
         retryPolicy = new ExponentialBackoffRetry(1000, 3);
+        logger.info("Start to connect zookeeper");
         client = CuratorFrameworkFactory.builder()
                 .connectString(zookeeperHost)
                 .sessionTimeoutMs(5000)
@@ -33,7 +34,7 @@ public class ZookeeperManager {
                 .namespace(NAMESPACE)
                 .build();
         client.start();
-        logger.info("zookeeper://" + zookeeperHost + " connect");
+        logger.info("zookeeper://" + zookeeperHost + " connect success");
     }
 
     public void createNode(String path) {
