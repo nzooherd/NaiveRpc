@@ -4,7 +4,8 @@ import com.alibaba.fastjson.JSON;
 import gq.shiwenhao.naiverpc.entities.ProviderHost;
 import gq.shiwenhao.naiverpc.loadbalance.LoadBalanceEngine;
 import gq.shiwenhao.naiverpc.loadbalance.LoadBalanceStrategy;
-import gq.shiwenhao.naiverpc.utils.NetUtils;
+import gq.shiwenhao.naiverpc.transport.ConnectManager;
+import gq.shiwenhao.naiverpc.utils.NetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,11 +15,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ServiceDiscover {
     private static Logger logger = LoggerFactory.getLogger(ServiceDiscover.class);
 
-    private List<ProviderHost> providerHosts = new CopyOnWriteArrayList<>();
+    private ConnectManager connectManager;
 
     private ZookeeperManager zookeeperManager;
     private LoadBalanceStrategy loadBalanceStrategy;
-    private ProvidersListener providersListener = new ProvidersListener(providerHosts);
+    private ProvidersListener providersListener = new ProvidersListener(this);
+    private List<ProviderHost> providerHosts = new CopyOnWriteArrayList<>();
 
     private Class interfaceClass;
     private String consumerPath;
@@ -30,28 +32,45 @@ public class ServiceDiscover {
         this.interfaceClass = interfaceClass;
         this.zookeeperManager = zookeeperManager;
 
-        host = NetUtils.getHost();
+        host = NetUtil.getHost();
         if(host == null){
             logger.error("Get local host failure");
         }
-        consumerPath = "/register/" + interfaceClass.getName() + "/consumers/" + host;
-        providersPath = "/register/" + interfaceClass.getName() + "/providers";
+        consumerPath = interfaceClass.getName() + "/consumers/" + host;
+        providersPath = interfaceClass.getName() + "/providers";
 
         init();
     }
 
 
     private void init() {
+        connectManager = ConnectManager.getInstance();
+
         zookeeperManager.createNode(consumerPath);
         logger.info("Start get providers host");
         List<String> providers = zookeeperManager.getChildrenNode(providersPath);
         for(String provider : providers){
             String path = providersPath + "/" + provider;
-            providerHosts.add(JSON.parseObject(
-                    new String(zookeeperManager.getNodeInformation(path)), ProviderHost.class));
+            providerHosts.add(JSON.parseObject(new String(zookeeperManager.getNodeInformation(path)),
+                    ProviderHost.class));
         }
         logger.info("End get providers host");
         zookeeperManager.watchNode(providersPath, providersListener);
+    }
+
+    public void addConnectNode(ProviderHost providerHost){
+        providerHosts.add(providerHost);
+        connectManager.addServerNode(providerHost);
+    }
+    public void deleteConnectedNode(ProviderHost providerHost){
+        providerHosts.remove(providerHost);
+        connectManager.removeServerNode(providerHost);
+
+    }
+    public void updateConnectedNode(ProviderHost providerHost){
+        providerHosts.remove(providerHost);
+        providerHosts.add(providerHost);
+        connectManager.updateServerNode(providerHost);
     }
 
     public void setLoadBalanceStrategy(String clusterStrategy){
@@ -59,7 +78,7 @@ public class ServiceDiscover {
     }
 
     public ProviderHost serviceLoadBalance(){
-        return loadBalanceStrategy.select(providerHosts);
+       return  loadBalanceStrategy.select(providerHosts);
     }
 
 }

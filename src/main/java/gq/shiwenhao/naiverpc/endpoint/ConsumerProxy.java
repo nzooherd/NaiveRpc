@@ -1,27 +1,42 @@
 package gq.shiwenhao.naiverpc.endpoint;
-import gq.shiwenhao.naiverpc.loadbalance.LoadBalanceStrategyEnum;
 import gq.shiwenhao.naiverpc.servicegovern.ServiceDiscover;
 import gq.shiwenhao.naiverpc.servicegovern.ZookeeperManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ConsumerProxy {
+    private static Logger logger = LoggerFactory.getLogger(ConsumerProxy.class);
+
     private String zookeeperHost;
-    private Class interfaceClass;
+    private Class<?> interfaceClass;
 
     private String loadBalanceStrategy;
 
     private ZookeeperManager zookeeperManager;
     private ServiceDiscover serviceDiscovery;
 
-    public ConsumerProxy(Class interfaceClass, String zookeeperHost){
+    public ConsumerProxy(String zookeeperHost){
         this.zookeeperHost = zookeeperHost;
-        this.interfaceClass = interfaceClass;
         zookeeperManager = new ZookeeperManager(zookeeperHost);
-        serviceDiscovery = new ServiceDiscover(interfaceClass, zookeeperManager);
         serviceDiscovery.setLoadBalanceStrategy(loadBalanceStrategy);
     }
+    public ConsumerProxy(String className, String zookeeperHost){
+        this(zookeeperHost);
 
-    public Object getProxy(){
+        try {
+            this.interfaceClass = Class.forName(className);
+        } catch (ClassNotFoundException e) {
+            logger.error("Class not fount " + e.getMessage());
+        }
+    }
+
+
+    public <T> T getProxySync(){
         return null;
     }
+    public <T> T getProxySync(Class<T> interfaceClass){
+        return null;
+    }
+
 
 }

@@ -9,8 +9,8 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.Enumeration;
 
-public class NetUtils {
-    private static Logger logger = LoggerFactory.getLogger(NetUtils.class);
+public class NetUtil {
+    private static Logger logger = LoggerFactory.getLogger(NetUtil.class);
 
     public static String getHost(){
         InetAddress candidateAddress = null;

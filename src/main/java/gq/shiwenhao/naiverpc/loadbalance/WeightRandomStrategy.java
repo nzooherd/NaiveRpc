@@ -1,7 +1,7 @@
 package gq.shiwenhao.naiverpc.loadbalance;
 
 import gq.shiwenhao.naiverpc.entities.ProviderHost;
-import gq.shiwenhao.naiverpc.utils.LoadBalanceUtils;
+import gq.shiwenhao.naiverpc.utils.LoadBalanceUtil;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class WeightRandomStrategy implements LoadBalanceStrategy{
         MAX_LEN = wightsSum[index - 1] + providerHosts.get(providerHosts.size() - 1).getWeight();
 
         int random = (int)(Math.random() * MAX_LEN);
-        index = LoadBalanceUtils.getIndex(wightsSum, random);
+        index = LoadBalanceUtil.getIndex(wightsSum, random);
 
         if(index == -1 || providerHosts.get(index) == null) {
             return providerHosts.get(1);

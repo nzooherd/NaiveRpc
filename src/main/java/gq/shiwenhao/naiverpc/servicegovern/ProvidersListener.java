@@ -8,15 +8,13 @@ import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
-
 public class ProvidersListener implements PathChildrenCacheListener {
     private static Logger logger = LoggerFactory.getLogger(ProvidersListener.class);
 
-    private List<ProviderHost> providerHosts;
+    private ServiceDiscover serviceDiscover;
 
-    public ProvidersListener(List<ProviderHost> providerHosts){
-        this.providerHosts = providerHosts;
+    public ProvidersListener(ServiceDiscover serviceDiscover){
+        this.serviceDiscover = serviceDiscover;
     }
 
     @Override
@@ -26,20 +24,19 @@ public class ProvidersListener implements PathChildrenCacheListener {
                 logger.info("Provider:" + event.getData().getPath() + " was added");
                 ProviderHost addProviderHost =
                         JSON.parseObject(event.getData().getData(), ProviderHost.class);
-                providerHosts.add(addProviderHost);
+                serviceDiscover.addConnectNode(addProviderHost);
                 break;
             case CHILD_REMOVED:
                 logger.info("Provider:" + event.getData().getPath() + " was removed");
                 ProviderHost removeProviderHost =
                         JSON.parseObject(event.getData().getData(), ProviderHost.class);
-                providerHosts.remove(removeProviderHost);
+                serviceDiscover.deleteConnectedNode(removeProviderHost);
                 break;
             case CHILD_UPDATED:
                 logger.info("Provider:" + event.getData().getPath() + " was updated");
                 ProviderHost updateProviderHost =
                         JSON.parseObject(event.getData().getData(), ProviderHost.class);
-                providerHosts.remove(updateProviderHost);
-                providerHosts.add(updateProviderHost);
+                serviceDiscover.updateConnectedNode(updateProviderHost);
                 break;
             default:
                 break;

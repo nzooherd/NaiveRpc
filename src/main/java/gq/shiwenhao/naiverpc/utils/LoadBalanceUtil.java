@@ -1,6 +1,6 @@
 package gq.shiwenhao.naiverpc.utils;
 
-public class LoadBalanceUtils {
+public class LoadBalanceUtil {
     public static int getIndex(int[] weightsSum, int random){
         int left = 0, right = weightsSum.length - 1;
         int medium;

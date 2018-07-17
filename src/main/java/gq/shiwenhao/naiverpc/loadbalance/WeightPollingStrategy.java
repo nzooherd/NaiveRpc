@@ -1,7 +1,7 @@
 package gq.shiwenhao.naiverpc.loadbalance;
 
 import gq.shiwenhao.naiverpc.entities.ProviderHost;
-import gq.shiwenhao.naiverpc.utils.LoadBalanceUtils;
+import gq.shiwenhao.naiverpc.utils.LoadBalanceUtil;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class WeightPollingStrategy implements LoadBalanceStrategy{
             index++;
         }
 
-        index = LoadBalanceUtils.getIndex(wightsSum, pollIndex);
+        index = LoadBalanceUtil.getIndex(wightsSum, pollIndex);
 
         if(index == -1 || providerHosts.get(index) == null) {
             return providerHosts.get(1);

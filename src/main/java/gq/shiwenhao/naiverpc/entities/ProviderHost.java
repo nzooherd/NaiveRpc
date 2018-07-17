@@ -54,4 +54,9 @@ public class ProviderHost {
                 host.equals(providerHostTemp.host);
     }
 
+    @Override
+    public String toString(){
+        return "host: " + host + " port: " + port + " weight: " + weight;
+    }
+
 }
