@@ -22,16 +22,13 @@ public class LoadBalanceEngine {
                new WeightRandomStrategy());
     }
 
-    public static LoadBalanceStrategy queryLoadBalance(String clusterStrategy){
-        LoadBalanceEnum loadBalanceStrategyEnum =
-                LoadBalanceEnum.queryByCode(clusterStrategy);
-        if(loadBalanceStrategyEnum == null) {
+    public static LoadBalanceStrategy queryLoadBalance(LoadBalanceEnum loadBalanceEnum){
+        if(loadBalanceEnum == null) {
             logger.info("The load balance strategy is RANDOM");
             return loadBalanceMap.get(LoadBalanceEnum.Random);
         }
 
-        LoadBalanceStrategy loadBalanceStrategy = loadBalanceMap.get(loadBalanceStrategyEnum);
-        logger.info("The load balance strategy is " +  clusterStrategy);
+        LoadBalanceStrategy loadBalanceStrategy = loadBalanceMap.get(loadBalanceEnum);
         return loadBalanceStrategy;
     }
 

@@ -16,7 +16,7 @@ public class ConsumerProxy {
     private boolean retryRequest;
     private int retryTimes;
     private int timeout;
-    private LoadBalanceEnum loadBalanceStrategyEnum;
+    private LoadBalanceEnum loadBalanceEnum;
 
     private ZookeeperManager zookeeperManager;
     private ServiceDiscover serviceDiscovery;
@@ -28,13 +28,14 @@ public class ConsumerProxy {
         this.retryRequest = builder.retryRequest;
         this.retryTimes = builder.retryTimes;
         this.timeout = builder.timeout;
-        this.loadBalanceStrategyEnum = builder.loadBalanceEnum;
+        this.loadBalanceEnum = builder.loadBalanceEnum;
 
         zookeeperManager = new ZookeeperManager(zookeeperHost);
+        serviceDiscovery = new ServiceDiscover(interfaceClass, zookeeperManager, loadBalanceEnum);
     }
 
 
-    private static class Builder{
+    public static class Builder{
         private static Logger logger = LoggerFactory.getLogger(Builder.class);
 
         //Required parameters

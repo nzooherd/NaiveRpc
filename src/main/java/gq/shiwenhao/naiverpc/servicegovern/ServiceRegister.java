@@ -24,7 +24,7 @@ public class ServiceRegister {
             logger.error("Get local host failure");
         }
 
-        providerPath = interfaceClass.getName() + "/providers/" + host + ":" + port;
+        providerPath = "/" + interfaceClass.getName() + "/providers/" + host + ":" + port;
         providerHost = new ProviderHost(host, port, weight);
 
     }

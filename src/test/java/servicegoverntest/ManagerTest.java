@@ -1,10 +1,12 @@
-package zookeepertest;
+package servicegoverntest;
 
 import com.alibaba.fastjson.JSON;
 import gq.shiwenhao.naiverpc.entities.ProviderHost;
 import gq.shiwenhao.naiverpc.servicegovern.ZookeeperManager;
 import org.junit.Test;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 public class ManagerTest {
@@ -25,5 +27,42 @@ public class ManagerTest {
         assert (providerHost.equals(JSON.parseObject(bytes, ProviderHost.class)));
 
         //countDownLatch.await(); 方便手动查看Zookeeper
+    }
+
+    @Test
+    public void servieDiscoveryTest() throws InterruptedException {
+        ProviderHost providerHost = new ProviderHost();
+        providerHost.setHost("127.0.0.1");
+        providerHost.setPort(8080);
+        providerHost.setWeight(1);
+
+        zookeeperManager.createNode("/service/host1", JSON.toJSONString(providerHost).getBytes());
+        zookeeperManager.createNode("/service/host2", JSON.toJSONString(providerHost).getBytes());
+
+        List<String> providers = zookeeperManager.getChildrenNode("/service");
+        assert (providers.size() == 2);
+
+        countDownLatch.await();
+    }
+
+    @Test
+    public void listTest(){
+        ProviderHost providerHost = new ProviderHost();
+        ProviderHost providerHostFake = new ProviderHost();
+        providerHost.setHost("127.0.0.1");
+        providerHostFake.setHost("127.0.0.1");
+        providerHost.setPort(9000);
+        providerHostFake.setPort(9000);
+        providerHost.setWeight(1);
+        providerHostFake.setWeight(2);
+
+        List<ProviderHost> providerHosts = new LinkedList<>();
+        providerHosts.add(providerHost);
+        providerHosts.remove(providerHostFake);
+        providerHosts.add(providerHostFake);
+
+        for(ProviderHost p : providerHosts){
+            System.out.println(p);
+        }
     }
 }

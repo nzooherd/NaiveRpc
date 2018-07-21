@@ -17,6 +17,7 @@ public class ProxyFactory implements InvocationHandler {
 
     private Class interfaceClass;
     private ServiceDiscover serviceDiscover;
+    private ConnectManager connectManager;
 
     private boolean retryRequest;
     private int retryTimes = 1;
@@ -25,6 +26,7 @@ public class ProxyFactory implements InvocationHandler {
     public ProxyFactory(Class<?> interfaceClass, ServiceDiscover serviceDiscover){
         this.interfaceClass = interfaceClass;
         this.serviceDiscover = serviceDiscover;
+        this.connectManager = ConnectManager.getInstance(serviceDiscover);
     }
 
     public void setTimeControl(boolean retryRequest, int retryTimes, int timeout){
@@ -60,26 +62,26 @@ public class ProxyFactory implements InvocationHandler {
 
         while(result == null && attemptCounts++ < retryTimes) {
             ProviderHost providerHost = serviceDiscover.serviceLoadBalance();
-            RpcRequestHandler clientHandler = ConnectManager.getInstance().
-                    getChannelByProviderHost(providerHost);
+            RpcRequestHandler clientHandler = connectManager.getChannelByProviderHost(providerHost);
             RpcFuture rpcFuture = clientHandler.sendRequest(rpcRequest);
             if(retryRequest) rpcFuture.timeControl(timeout);
             result = rpcFuture.get();
+            if(result == null) {
+                clientHandler.removeRequest(rpcRequest.getRequestId());
+            }
         }
 
         if(result == null) {
-            logger.error("RequestId: ");
+            logger.error("RequestId: " + rpcRequest.getRequestId() + " timeout!");
         }
         return result;
     }
 
-    public Object call(String methodName, Object[] args){
+    public RpcFuture call(String methodName, Object[] args){
         RpcRequest rpcRequest = createRpcRequest(interfaceClass.getName(), methodName, args);
         ProviderHost providerHost = serviceDiscover.serviceLoadBalance();
-        RpcRequestHandler clientHandler = ConnectManager.getInstance().
-                getChannelByProviderHost(providerHost);
-        RpcFuture rpcFuture = clientHandler.sendRequest(rpcRequest);
-        return rpcFuture;
+        RpcRequestHandler clientHandler = connectManager.getChannelByProviderHost(providerHost);
+        return clientHandler.sendRequest(rpcRequest);
     }
 
     private RpcRequest createRpcRequest(String className, String methodName, Object[] args){

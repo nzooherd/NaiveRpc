@@ -2,6 +2,7 @@ package gq.shiwenhao.naiverpc.transport;
 
 import gq.shiwenhao.naiverpc.entities.RpcRequest;
 import gq.shiwenhao.naiverpc.entities.RpcResponse;
+import gq.shiwenhao.naiverpc.utils.SerializeUtil;
 import io.netty.channel.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -60,6 +61,7 @@ public class RpcRequestHandler extends SimpleChannelInboundHandler<RpcResponse> 
         }
         return rpcFuture;
     }
+
     public void removeRequest(long requestId){
         pendingRpc.remove(requestId);
     }

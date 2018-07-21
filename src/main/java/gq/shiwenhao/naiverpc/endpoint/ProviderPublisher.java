@@ -20,7 +20,8 @@ public class ProviderPublisher {
     private Logger logger = LoggerFactory.getLogger(ProviderPublisher.class);
 
     private Class interfaceClass;
-    private Object interfaceImpl;
+    public Object interfaceImpl;
+
     private String zookeeperHost;
     private int port;
     private int weight;
@@ -84,7 +85,7 @@ public class ProviderPublisher {
 
 
     //构造器
-    private static class Builder{
+    public static class Builder{
         private static Logger logger = LoggerFactory.getLogger(Builder.class);
 
         //Required parameters

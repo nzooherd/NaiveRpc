@@ -3,7 +3,7 @@ package utilstest;
 import gq.shiwenhao.naiverpc.utils.LoadBalanceUtil;
 import org.junit.Test;
 
-public class LoadBalanceUtilsTest {
+public class LoadBalanceUtilTest {
     @Test
     public void getIndexTest(){
         int[] weight = new int[]{0, 2, 3, 8, 10, 32, 34, 76};

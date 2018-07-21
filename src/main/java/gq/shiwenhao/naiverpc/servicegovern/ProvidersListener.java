@@ -24,7 +24,7 @@ public class ProvidersListener implements PathChildrenCacheListener {
                 logger.info("Provider:" + event.getData().getPath() + " was added");
                 ProviderHost addProviderHost =
                         JSON.parseObject(event.getData().getData(), ProviderHost.class);
-                serviceDiscover.addConnectNode(addProviderHost);
+                serviceDiscover.tryAddConnectNode(addProviderHost);
                 break;
             case CHILD_REMOVED:
                 logger.info("Provider:" + event.getData().getPath() + " was removed");

@@ -37,7 +37,7 @@ public class RpcFuture {
             logger.error("Rpc future try to get response throw exception:" + e.getMessage());
         }
         clientHandler.removeRequest(response.getRequestId());
-        return response;
+        return response.getResult();
     }
 
     public void set(RpcResponse response){

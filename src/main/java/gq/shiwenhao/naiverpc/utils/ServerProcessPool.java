@@ -44,6 +44,7 @@ public class ServerProcessPool {
 
         try {
             Method method = interfaceImpl.getClass().getMethod(methodName, paramTypes);
+            method.setAccessible(true);
             Future<RpcResponse> future = executor.submit(new MethodInvoke(
                     method, interfaceImpl, arguments, response));
             response = future.get();
@@ -51,7 +52,7 @@ public class ServerProcessPool {
             logger.warn("No method:" + e.getMessage());
         } catch (InterruptedException | ExecutionException e){
             response.setError(e);
-            logger.error("Execute request:" + rpcRequest.getRequestId() + " error:" + e.getMessage());
+            logger.error("Execute requestId:" + rpcRequest.getRequestId() + " error:" + e.getMessage());
         } finally {
             response.setRequestId(rpcRequest.getRequestId());
 

@@ -54,6 +54,7 @@ public class ZookeeperManager {
                    .withMode(CreateMode.EPHEMERAL)
                    .forPath(path, information);
         } catch (Exception e) {
+            e.printStackTrace();
             logger.error("Create node:" + path + " with information:"
                     + new String(information) + " failure:" + e.getMessage());
         }
@@ -78,8 +79,14 @@ public class ZookeeperManager {
 
 
     public void watchNode(String path, PathChildrenCacheListener cacheListener){
-        PathChildrenCache cache = new PathChildrenCache(client, path, true);
+        PathChildrenCache cache = new PathChildrenCache(client,  path, true);
         cache.getListenable().addListener(cacheListener);
+        try {
+            cache.start(PathChildrenCache.StartMode.BUILD_INITIAL_CACHE);
+        } catch (Exception e) {
+            logger.info("Zookeeper watch path:" + path + " throws exception:" + e.getMessage());
+        }
+        logger.info("Zookeeper watch path:" + path + " success!");
     }
 
 }

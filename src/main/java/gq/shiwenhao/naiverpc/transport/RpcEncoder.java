@@ -24,6 +24,7 @@ public class RpcEncoder extends MessageToByteEncoder {
         }
 
         byte[] bytes = SerializeUtil.writeToByteArray(msg);
+        out.writeInt(bytes.length);
         out.writeBytes(bytes);
 
     }
