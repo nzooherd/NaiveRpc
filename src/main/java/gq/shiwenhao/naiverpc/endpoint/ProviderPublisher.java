@@ -17,7 +17,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ProviderPublisher {
-    private Logger logger = LoggerFactory.getLogger(ProviderPublisher.class);
+    private static Logger logger = LoggerFactory.getLogger(ProviderPublisher.class);
 
     private Class interfaceClass;
     public Object interfaceImpl;

@@ -14,7 +14,7 @@ public class RpcRequest {
     private Object[] arguments;
 
     public RpcRequest(){
-        requestId = REQUEST_ID.getAndDecrement();
+        requestId = REQUEST_ID.getAndIncrement();
     }
 
     public long getRequestId() {
