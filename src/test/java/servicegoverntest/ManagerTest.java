@@ -16,6 +16,8 @@ public class ManagerTest {
 
     @Test
     public void createNodeTest() throws InterruptedException {
+        System.out.println("createNodeTest");
+
         ProviderHost providerHost = new ProviderHost();
         providerHost.setHost("127.0.0.1");
         providerHost.setPort(8080);
@@ -25,12 +27,14 @@ public class ManagerTest {
 
         byte[] bytes = zookeeperManager.getNodeInformation("/register/host1");
         assert (providerHost.equals(JSON.parseObject(bytes, ProviderHost.class)));
-
+        return;
         //countDownLatch.await(); 方便手动查看Zookeeper
     }
 
     @Test
-    public void servieDiscoveryTest() throws InterruptedException {
+    public void serviceDiscoveryTest() throws InterruptedException {
+        System.out.println("serviceDiscoveryTest");
+
         ProviderHost providerHost = new ProviderHost();
         providerHost.setHost("127.0.0.1");
         providerHost.setPort(8080);
@@ -42,11 +46,13 @@ public class ManagerTest {
         List<String> providers = zookeeperManager.getChildrenNode("/service");
         assert (providers.size() == 2);
 
-        countDownLatch.await();
+        //countDownLatch.await();
     }
 
     @Test
     public void listTest(){
+        System.out.println("listTest");
+
         ProviderHost providerHost = new ProviderHost();
         ProviderHost providerHostFake = new ProviderHost();
         providerHost.setHost("127.0.0.1");
