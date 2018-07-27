@@ -86,6 +86,10 @@ public class ServiceDiscover {
     }
 
     public ProviderHost serviceLoadBalance(){
+        if(countDownLatch.getCount() == 1) {
+            logger.warn("The connection list is null. Is waiting connect to server!");
+        }
+
         try {
             countDownLatch.await();
         } catch (InterruptedException e) {

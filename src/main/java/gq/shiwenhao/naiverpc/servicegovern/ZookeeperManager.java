@@ -10,6 +10,7 @@ import org.apache.zookeeper.CreateMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -66,7 +67,7 @@ public class ZookeeperManager {
         } catch (Exception e) {
             logger.error("Get node:" + path + " children error:" + e.getMessage());
         }
-        return null;
+        return new LinkedList<String>();
     }
     public byte[] getNodeInformation(String path) {
         try {
@@ -76,7 +77,6 @@ public class ZookeeperManager {
         }
         return null;
     }
-
 
     public void watchNode(String path, PathChildrenCacheListener cacheListener){
         PathChildrenCache cache = new PathChildrenCache(client,  path, true);
