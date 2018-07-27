@@ -2,32 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53591477-9407-42d1-984c-c7e6721eb8c7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/api/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/api/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/api/SayHello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/api/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ConsumerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ConsumerProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ProviderPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ProviderPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/LoadBalanceEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/LoadBalanceEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ProvidersListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ProvidersListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ZookeeperManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ZookeeperManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/ConnectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/ConnectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcFuture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils/ServerProcessPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils/ServerProcessPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/servicegoverntest/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/servicegoverntest/ManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/transport/RpcFutureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/transport/RpcFutureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilstest/LoadBalanceUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilstest/LoadBalanceUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilstest/NetUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilstest/NetUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilstest/SerializeUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilstest/SerializeUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/QuickSortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/QuickSortImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/SayHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SayHello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/SayHelloImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SayHelloImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/api/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/api/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/api/NaiveRpcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/api/NaiveRpcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/api/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/api/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/spring/NaiveRpcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/spring/NaiveRpcTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RpcRequestHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcRequestHandler.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+            <state relative-caret-position="494">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,47 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RpcResponseHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcResponseHandler.java">
+      <file leaf-file-name="RpcFutureTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/transport/RpcFutureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PollingStategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/PollingStategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerProcessPool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils/ServerProcessPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeightPollingStrategy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/WeightPollingStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="312">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -103,8 +54,8 @@
       <file leaf-file-name="ZookeeperManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ZookeeperManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
+            <state relative-caret-position="316">
+              <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,11 +63,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProviderPublisher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ProviderPublisher.java">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="104">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/demo/spring/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/demo/spring/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NaiveRpcTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/demo/spring/NaiveRpcTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,23 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadBalanceEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/LoadBalanceEnum.java">
+      <file leaf-file-name="NaiveRpcTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/NaiveRpcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsumerProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ConsumerProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="338">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -168,15 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/RandomLoadBalance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/PollingStategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/WightPollingStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/LoadBalanceStrategyEnum.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ZookeeperTest/ManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/entities/ProviderInformation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscovery.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utilstest/SystemInfoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils/SystemInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscoverer.java" />
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/WeightRandomStrategy.java" />
         <option value="$PROJECT_DIR$/src/test/java/utilstest/NetUtilsTest.java" />
@@ -200,9 +167,7 @@
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceRegister.java" />
         <option value="$PROJECT_DIR$/src/test/java/servicegoverntest/ManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/LoadBalanceEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ConsumerProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ProxyFactory.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/demo/api/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/demo/api/SayHello.java" />
         <option value="$PROJECT_DIR$/src/test/java/demo/api/Server.java" />
@@ -215,10 +180,21 @@
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcDecoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/ConnectManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ProvidersListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscover.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ZookeeperManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/demo/api/Client.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscover.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ConsumerProxy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/spring/SayHello.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/SayHelloImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/api/Client.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/provider-publisher.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/spring/Server.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/spring/Client.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/client-proxy.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ZookeeperManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/spring/NaiveRpcTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/api/NaiveRpcTest.java" />
       </list>
     </option>
   </component>
@@ -239,9 +215,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1" />
     <option name="y" value="-6" />
-    <option name="width" value="1920" />
-    <option name="height" value="1086" />
+    <option name="width" value="1918" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -252,6 +229,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -294,6 +272,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="naiverpc" type="462c0819:PsiDirectoryNode" />
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NaiveRpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NaiveRpc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="naiverpc" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NaiveRpc" type="b2602c69:ProjectViewProjectNode" />
@@ -374,40 +361,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servicegoverntest" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NaiveRpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="NaiveRpc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NaiveRpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NaiveRpc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utilstest" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -426,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="JUnit.NaiveRpcTest.rpcTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -436,15 +415,21 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.api.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="NaiveRpcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.spring.NaiveRpcTest" />
       <module name="NaiveRpc" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.api.Server" />
@@ -452,7 +437,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.api.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -460,19 +445,19 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ManagerTest.servieDiscoveryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NaiveRpcTest.rpcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NaiveRpc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="servicegoverntest.*" />
+          <option name="PATTERN" value="demo.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="servicegoverntest" />
-      <option name="MAIN_CLASS_NAME" value="servicegoverntest.ManagerTest" />
-      <option name="METHOD_NAME" value="servieDiscoveryTest" />
+      <option name="PACKAGE_NAME" value="demo.api" />
+      <option name="MAIN_CLASS_NAME" value="demo.api.NaiveRpcTest" />
+      <option name="METHOD_NAME" value="rpcTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -483,19 +468,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="RpcFutureTest.timeoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NaiveRpcTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NaiveRpc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="transport.*" />
+          <option name="PATTERN" value="demo.spring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="transport" />
-      <option name="MAIN_CLASS_NAME" value="transport.RpcFutureTest" />
-      <option name="METHOD_NAME" value="timeoutTest" />
+      <option name="PACKAGE_NAME" value="demo.spring" />
+      <option name="MAIN_CLASS_NAME" value="demo.spring.NaiveRpcTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -545,19 +530,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.RpcFutureTest.timeoutTest" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.Client" />
-      <item itemvalue="JUnit.ManagerTest.servieDiscoveryTest" />
+      <item itemvalue="Application.NaiveRpcTest" />
+      <item itemvalue="JUnit.NaiveRpcTest.test" />
+      <item itemvalue="JUnit.NaiveRpcTest.rpcTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NaiveRpcTest.rpcTest" />
+        <item itemvalue="JUnit.NaiveRpcTest.test" />
+        <item itemvalue="Application.NaiveRpcTest" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="JUnit.ManagerTest.servieDiscoveryTest" />
-        <item itemvalue="JUnit.RpcFutureTest.timeoutTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -580,25 +565,12 @@
       <workItem from="1531716397762" duration="47778000" />
       <workItem from="1531880263570" duration="10327000" />
       <workItem from="1531972569447" duration="17789000" />
+      <workItem from="1532675517046" duration="3169000" />
+      <workItem from="1532678851620" duration="3957000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ManagerTest_createNodeTest - 2018.07.15 at 22h 02m 54s.xml">
-      <configuration name="ManagerTest.createNodeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ManagerTest_listTest - 2018.07.16 at 17h 45m 18s.xml">
-      <configuration name="ManagerTest.listTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RpcFutureTest_timeoutTest - 2018.07.17 at 23h 53m 54s.xml">
-      <configuration name="RpcFutureTest.timeoutTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RpcFutureTest_timeoutTest - 2018.07.17 at 23h 54m 04s.xml">
-      <configuration name="RpcFutureTest.timeoutTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RpcFutureTest_timeoutTest - 2018.07.17 at 23h 54m 18s.xml">
-      <configuration name="RpcFutureTest.timeoutTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RpcFutureTest_timeoutTest - 2018.07.17 at 23h 54m 30s.xml">
       <configuration name="RpcFutureTest.timeoutTest" configurationId="JUnit" />
     </history-entry>
@@ -614,9 +586,24 @@
     <history-entry file="ManagerTest_servieDiscoveryTest - 2018.07.18 at 14h 42m 40s.xml">
       <configuration name="ManagerTest.servieDiscoveryTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NaiveRpcTest_test - 2018.07.27 at 16h 51m 17s.xml">
+      <configuration name="NaiveRpcTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NaiveRpcTest_test - 2018.07.27 at 16h 51m 25s.xml">
+      <configuration name="NaiveRpcTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NaiveRpcTest_rpcTest - 2018.07.27 at 16h 51m 37s.xml">
+      <configuration name="NaiveRpcTest.rpcTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NaiveRpcTest_test - 2018.07.27 at 17h 13m 30s.xml">
+      <configuration name="NaiveRpcTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NaiveRpcTest_rpcTest - 2018.07.27 at 17h 14m 31s.xml">
+      <configuration name="NaiveRpcTest.rpcTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135953000" />
+    <option name="totallyTimeSpent" value="143079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-6" width="1920" height="1086" extended-state="6" />
@@ -632,56 +619,57 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36836836" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36814892" />
+      <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9229229" visible="true" weight="0.19322917" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32977587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.077077076" side_tool="true" weight="0.2109375" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33733734" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.34734735" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9229229" visible="true" weight="0.19322917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="6" sideWeight="0.077077076" side_tool="true" weight="0.2109375" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.34734735" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="6" sideWeight="0.077077076" side_tool="true" weight="0.2109375" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -696,101 +684,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/as.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/entities/ProviderInformation.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/utilstest/LoadBalanceUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar!/org/slf4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Applications/jdk1.8/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/WeightRandomStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utilstest/SerializeUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utilstest/NetUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/entities/RpcResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Main.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils/NetUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
           <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,56 +696,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.12.Final/netty-all-4.1.12.Final-sources.jar!/io/netty/channel/ChannelOutboundInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="229" column="18" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.12.Final/netty-all-4.1.12.Final-sources.jar!/io/netty/channel/ChannelHandlerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.12.Final/netty-all-4.1.12.Final-sources.jar!/io/netty/channel/ChannelOutboundInvoker.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.12.Final/netty-all-4.1.12.Final-sources.jar!/io/netty/channel/ChannelHandlerContext.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/entities/RpcRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
           <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-          <folding>
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/transport/TimeoutTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/transport/RpcFutureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/apache/curator/apache-curator/2.7.1/apache-curator-2.7.1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="484" column="24" selection-start-line="484" selection-start-column="24" selection-end-line="484" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/curator/apache-curator/2.7.1/apache-curator-2.7.1.pom" />
     <entry file="uml://MAVEN/gq.shiwenhao:NaiveRpc:1.0-SNAPSHOT">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1056,13 +918,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j2.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/servicegoverntest/ManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -1073,30 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/RandomStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/LoadBalanceStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1110,27 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/SayHello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils/SerializeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1138,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,9 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,19 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="831">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-709">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,35 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -1232,59 +1003,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ProvidersListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ZookeeperManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
+        <state relative-caret-position="1352">
           <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/transport/RpcResponseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="572">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ConsumerProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ProviderPublisher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="364">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1294,21 +1029,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/LoadBalanceEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="390">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/PollingStategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state>
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/utils/ServerProcessPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state>
           <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1316,20 +1051,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        <state>
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/WeightRandomStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/WeightPollingStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state>
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/loadbalance/RandomStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ProvidersListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ServiceDiscover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="89" column="82" selection-start-line="89" selection-start-column="82" selection-end-line="89" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="728">
+            <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <folding>
+              <element signature="e#104#105#0" expanded="true" />
+              <element signature="e#141#142#0" expanded="true" />
+              <element signature="e#0#627#0" expanded="true" />
+              <element signature="e#0#698#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/endpoint/ConsumerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-416">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/spring/SayHello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/QuickSortImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/SayHello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/SayHelloImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/spring/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/provider-publisher.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/client-proxy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gq/shiwenhao/naiverpc/servicegovern/ZookeeperManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/transport/RpcFutureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/spring/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/spring/NaiveRpcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/api/NaiveRpcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
