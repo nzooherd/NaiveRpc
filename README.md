@@ -19,7 +19,7 @@ Email|cat@shiwenhao.gq
 
 ## Quick Start
 ### Maven dependency
-```
+```xml
 <dependency>
     <groupId>gq.shiwenhao</groupId>
     <artifactId>naive-rpc</artifactId>
@@ -27,17 +27,17 @@ Email|cat@shiwenhao.gq
 </dependency>
 ```
 ### Demo
-NaiveRpc supports use in api and spring.
+NaiveRpc supports can use in api and spring.
 
 Assume there is an interface
-```
+```java
 package demo.rpc;
-public interface SayHello(){
+public interface SayHello{
     String sayHelloToOne(String one);
 }
 ```
 And next is an implement class.
-```
+```java
 public class SayHelloImpl implements SayHello{
     @Override
     public String sayHelloToOne(String one){
@@ -47,7 +47,7 @@ public class SayHelloImpl implements SayHello{
 ```
 We can use it like this.
 #### API
-```
+```java
 /*
  * Start Server
  */
@@ -75,8 +75,46 @@ RpcFuture rpcFuture = proxyFactory.call("sayHelloToOne", new Object[]{"world"});
 System.out.println(rpcFuture.get());
 ```
 #### Spring
+```xml
+/*
+ * Server
+ */
+ <bean id="springProviderPublisher" class="gq.shiwenhao.naiverpc.endpoint.SpringProviderPublisher">
+    <property name="zookeeperHost" value="127.0.0.1:2181"/>
+    <property name="interfaceClassName" value="demo.rpc.SayHello"/>
+    <property name="interfaceImpl">
+       <bean class="SayHelloImpl"/>
+    </property>
+    <property name="port" value="9000"/>
+</bean>
+
+/*
+ * Client
+ */
+ <bean id = "springConsumerProxy" class="gq.shiwenhao.naiverpc.endpoint.SpringConsumerProxy">
+     <property name="zookeeperHost" value="127.0.0.1:2181"/>
+     <property name="interfaceClassName" value="demo.rpc.SayHello"/>
+     <!--property name="async" value="true"-->
+ </bean>
 ```
+```java
+ 
+ /*
+  * Sync call (if async is false, default)
+  */
+SayHello sayHello = (SayHello) beanFactory.getBean("springConsumerProxy");
+System.out.println(sayHello.sayHelloToOne("Li Hua"));
+
+/*
+ * Async call (if async is true)
+ */
+ProxyFactory proxyFactory = (ProxyFactory) beanFactory.getBean("springConsumerProxy");
+RpcFuture rpcFuture =  proxyFactory.call("sayHelloToOne", new Object[]{"World"});
+System.out.print(rpcFuture.get());
+
 ```
+
+*It is easy. If you want to know more, please git clone the repositry and observery the test code. It has a demo of using naive-rpc includes api and spring.*
 
 ### Parameter
 * Client
